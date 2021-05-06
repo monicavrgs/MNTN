@@ -1,0 +1,200 @@
+*{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+body{
+    padding: 4em 3.5em;
+    background-image: url(../imagens/mountain.jpg);
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+}
+
+.menu-item{
+    margin: 0 25px;
+}
+
+.logo{
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+}
+
+.nav-menu, .login, .subtitle, .social-media, .scrollbar, .content-text, .read-more, .footer{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+.nav-menu{
+    margin-bottom: 200px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-main{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: 'Merriweather', serif;
+    font-size: 58px;
+    margin: 25px 0;
+    line-height: 80px;
+    max-width: 700px;
+}
+
+.subtitle{
+    text-transform: uppercase;
+    color:#FBD784;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollbar{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.social-media-title{
+    transform: rotate(90deg);
+    margin-bottom: 20px;
+}
+
+.instagram, .twitter, .scrollbar-item{
+    margin-top: 20px;
+}
+
+.content-section {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 70px 20px;
+    flex-wrap: wrap;
+    position: sticky;
+}
+
+#first-object, #second-object, #third-object{
+    position: sticky;
+}
+
+#first-object::before{
+    content: "01";
+    color: #FFFFFF;
+    font-size: 150px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px; left: 20px;
+}
+
+#second-object::before{
+    content: "02";
+    color: #FFFFFF;
+    font-size: 150px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px; left: 500px;
+}
+
+#third-object::before{
+    content: "03";
+    color: #FFFFFF;
+    font-size: 150px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px; left: 500px;
+}
+
+.object-section{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 750px;
+    margin: 20px 0 40px;
+}
+
+#second-object{
+    flex-direction: row-reverse;
+}
+
+.content-title{
+    font-size: 42px;
+    margin: 15px 0;
+}
+.content-text{
+    max-width: 450px;
+    line-height: 25px;
+}
+
+.content-img{
+    display: inline;
+    width: 300px;
+    height: 381px;
+}
+
+.read-more{
+    text-transform: lowercase;
+    color:#FBD784;
+    font-weight: bold;
+}
+
+.arrow-right{
+    display: inline-flex;
+    width: 15px;
+    height: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text{
+    max-width: 300px;
+    margin: 25px 0 100px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.copyright{
+    opacity: 0.5;
+}
+
+.about-blog, .about-institutional{
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-title, .institutional-title{
+    color: #FBD784;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-item, .institutional-item{
+    margin-top: 20px;
+}
