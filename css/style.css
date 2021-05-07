@@ -14,10 +14,15 @@ body{
 }
 
 .menu-item{
-    margin: 0 25px;
+    margin: 0 20px;
 }
 
-.logo{
+.menu-item:hover, .read-more:hover{
+    font-size: 18px;
+    transition-duration: 200ms;
+}
+
+.brand{
     font-family: 'Merriweather', serif;
     font-size: 24px;
 }
@@ -39,7 +44,6 @@ body{
 
 .banner-main{
     max-width: 940px;
-    margin: 0 auto;
 }
 
 .title{
@@ -55,14 +59,20 @@ body{
     color:#FBD784;
 }
 
-.social-media{
+.line{
+    display: inline-flex;
+}
+
+.social-media, .scrollbar{
     display: flex;
     flex-direction: column;
 }
 
+.social-media{
+    align-items: center;
+}
+
 .scrollbar{
-    display: flex;
-    flex-direction: column;
     justify-items: flex-start;
     align-items: center;
 }
@@ -80,12 +90,8 @@ body{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    margin: 70px 20px;
     flex-wrap: wrap;
-    position: sticky;
-}
-
-#first-object, #second-object, #third-object{
+    margin: 70px 20px;
     position: sticky;
 }
 
@@ -97,7 +103,7 @@ body{
     font-weight: bold;
     opacity: 0.5;
     position: absolute;
-    top: 0px; left: 20px;
+    top: 0px; left: 10px;
 }
 
 #second-object::before{
@@ -119,12 +125,10 @@ body{
     font-weight: bold;
     opacity: 0.5;
     position: absolute;
-    top: 0px; left: 500px;
+    top: 0px; left: 0px;
 }
 
 .object-section{
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     max-width: 750px;
     margin: 20px 0 40px;
@@ -138,6 +142,7 @@ body{
     font-size: 42px;
     margin: 15px 0;
 }
+
 .content-text{
     max-width: 450px;
     line-height: 25px;
@@ -155,21 +160,18 @@ body{
     font-weight: bold;
 }
 
-.arrow-right{
+
+.arrow-right{ 
     display: inline-flex;
     width: 15px;
     height: 10px;
+    margin-left: 5px;
 }
 
 .footer{
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
-}
-
-.footer-section{
-    display: flex;
-    flex-direction: column;
 }
 
 .footer-text{
